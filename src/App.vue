@@ -59,7 +59,7 @@ export default {
   methods: {
     scrollTo(id) {
       document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-      this.menuOpen = false; // Tutup menu saat diklik (untuk mobile)
+      this.menuOpen = false; 
     },
     onScroll() {
       let scrollY = window.scrollY;
