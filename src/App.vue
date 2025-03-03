@@ -1,12 +1,11 @@
 <template>
   <div>
-    <!-- Navbar -->
+    
     <nav class="navbar fixed-top">
       <div class="container">
         <!-- Logo di Kiri -->
         <a class="brand" href="#">Surya Darma</a>
 
-        <!-- Menu Navigasi di Kanan -->
         <ul class="nav-links">
           <li v-for="section in sections" :key="section.id">
             <a
@@ -19,14 +18,12 @@
           </li>
         </ul>
 
-        <!-- Tombol Menu untuk Mobile -->
         <button class="menu-toggle" @click="toggleMenu">
           <span :class="{ open: menuOpen }"></span>
         </button>
       </div>
     </nav>
 
-    <!-- Konten Halaman -->
     <Home id="home" />
     <About id="about" />
     <Skills id="skills" />
@@ -82,7 +79,7 @@ export default {
 </script>
 
 <style>
-/* Global Styles */
+
 body {
  margin: 0;
   padding: 0;
@@ -95,7 +92,6 @@ body {
   height: 100vh;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -110,7 +106,6 @@ body {
   transition: background 0.3s ease-in-out;
 }
 
-/* Navbar Container */
 .container {
   display: flex;
   justify-content: space-between;
@@ -118,7 +113,6 @@ body {
   width: 100%;
 }
 
-/* Brand (Logo) di Kiri */
 .brand {
   font-size: 24px;
   font-weight: bold;
@@ -134,12 +128,11 @@ body {
   text-shadow: 0px 0px 10px #ffdd00, 0px 0px 20px #ff8800;
 }
 
-/* Navbar Links di Kanan */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin-right: 5%; /* Pindahkan menu ke kanan */
+  margin-right: 5%; 
 }
 
 .nav-links li a {
@@ -151,14 +144,12 @@ body {
   position: relative;
 }
 
-/* Efek Hover */
 .nav-links li a:hover {
   color: yellow;
   text-shadow: 0px 0px 10px yellow;
   transform: translateY(-2px);
 }
 
-/* Efek Underline Aktif */
 .nav-links li a.active::after {
   content: "";
   width: 100%;
@@ -170,7 +161,6 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Tombol Menu Mobile */
 .menu-toggle {
   display: none;
   background: none;
