@@ -3,7 +3,6 @@
     
     <nav class="navbar fixed-top">
       <div class="container">
-        <!-- Logo di Kiri -->
         <a class="brand" href="#">Surya Darma</a>
 
         <ul class="nav-links">
